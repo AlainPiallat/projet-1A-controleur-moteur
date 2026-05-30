@@ -1,0 +1,104 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "45f12937-ffc1-4231-b889-4528e172ca84")
+	(paper "A4")
+	(title_block
+		(title "Root")
+		(date "2026-03-10")
+		(rev "V1")
+		(company "C.I et H.M")
+	)
+	(lib_symbols)
+	(sheet
+		(at 133.35 39.37)
+		(size 35.56 63.5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "58028d25-d6ae-48df-8c87-d26fdd4529a9")
+		(property "Sheetname" "Connector"
+			(at 133.35 38.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connector.kicad_sch"
+			(at 133.35 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_PUISSANCE"
+				(path "/45f12937-ffc1-4231-b889-4528e172ca84"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 39.37)
+		(size 33.02 63.5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f84c15a8-5dca-4114-9d03-dcb8ed5071b4")
+		(property "Sheetname" "Power Stage"
+			(at 88.9 38.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 88.9 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_PUISSANCE"
+				(path "/45f12937-ffc1-4231-b889-4528e172ca84"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,116 @@
+(footprint "Fuse_3-140-177"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "Fuse_3-140-177"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "8a6aded0-c95a-443c-97a2-53e8e006c78a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "UHS Fuse 50 - 100A, 32/50 VDC, 8.4 x 9.4 mm"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "92519a6e-7d07-4dca-b574-77fb81ca8095")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2771549e-22ca-42f1-9bfc-195bc07b5480")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "63063a1b-04a5-4bf7-b7a0-04e6d7e93eca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 1.8 -8.2)
+		(end -1.5 -8.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4e9025cb-d3d6-4ac0-9867-7adbc585b758")
+	)
+	(fp_line
+		(start 1.8 -1.8)
+		(end -1.5 -1.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "035cc40b-9d34-408f-8a22-b48fc1170d57")
+	)
+	(fp_rect
+		(start -5.25 -8.5)
+		(end 5.6 -1.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bc0d1bb6-c3db-4264-8668-8585d104d705")
+	)
+	(fp_rect
+		(start -3.2 -8)
+		(end 3.7 -2.05)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "27346963-042f-43df-831a-84f700db47a6")
+	)
+	(pad "1" smd roundrect
+		(at -3.2 -5)
+		(size 3.4 6.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(solder_mask_margin 0.102)
+		(uuid "d909217b-cda7-439a-9782-1b8d6dfee0ec")
+	)
+	(pad "2" smd roundrect
+		(at 3.5 -5)
+		(size 3.4 6.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(solder_mask_margin 0.102)
+		(uuid "341ae95e-f225-4b78-8964-91a3575d6277")
+	)
+	(embedded_fonts no)
+)
