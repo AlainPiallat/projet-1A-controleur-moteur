@@ -1,6 +1,6 @@
 ### Connector
 
-!\[Connector schematic](schematics\_puissance.pdf)
+!\[Connector schematic](schematics_puissance.pdf)
 
 Cette partie a fait l'objet d'une étude approfondie afin de garantir l'intégrité des signaux faibles et la robustesse des flux de forte puissance. La connectique est divisée en quatre blocs distincts détaillés ci-dessous.
 
@@ -12,13 +12,13 @@ L'interface de puissance, identifiée par le bloc CON1, gère l'alimentation pri
 
 
 
-!\[Between board connector](Between\_board\_connector.png)
+!\[Between board connector](Between_board_connector.png)
 
 Le connecteur J3 agit comme le système nerveux central reliant l'étage de puissance à l'intelligence externe. Il s'agit d'une embase mâle à double rangée de 32 broches au pas standard de 2.54 millimètres, numérotée en mode Odd/Even sous la référence Conn\_02x16\_Odd\_Even. Cette interface regroupe de manière ordonnée l'ensemble des flux d'informations de la carte. On y retrouve les commandes de hachage PWM issues de la carte de contrôle, notées GHS1 à GHS3 et GLS1 à GLS3, ainsi que les retours différentiels VSHUNT1P/N à VSHUNT3P/N utilisés pour la mesure du courant des trois phases. J3 centralise également les signaux de surveillance analogique tels que les tensions de phases VOUT1 à VOUT3, la surveillance du bus DC noté VM et l'alerte thermique TEMP\_SENSOR. Enfin, il assure la distribution des alimentations logiques VDD et VHALL, accompagnées de multiples points de masse GND répartis stratégiquement pour garantir un bon retour de courant et limiter le bruit électromagnétique.
 
 
 
-!\[Connector Hall](Conn\_hall.png)
+!\[Connector Hall](Conn_hall.png)
 
 Pour l'interface de retour de position du rotor, qui exploite les capteurs à effet Hall, la carte dispose d'un connecteur dédié J1 nommé CONN HAL. Cette séparation physique évite de mélanger les signaux logiques sensibles avec les flux de puissance. Nous avons opté pour un connecteur de la série JST PH, référence B5B-PH-K-S, comportant 5 broches au pas de 2.0 millimètres. Ce standard industriel intègre un verrouillage par friction garantissant une connexion fiable capable de résister aux vibrations mécaniques du moteur. Au niveau du brochage, la broche 1 est reliée à la masse GND et la broche 5 fournit l'alimentation dédiée aux capteurs via le réseau VHALL. Les trois broches centrales 2, 3 et 4 reçoivent quant à elles les signaux logiques de position HALL1, HALL2 et HALL3.
 
