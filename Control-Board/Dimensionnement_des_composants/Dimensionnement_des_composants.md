@@ -23,7 +23,7 @@ $$\frac{Rbus2}{Rbus1+Rbus2}=\frac{VBUS}{VM}=\frac{3}{60}=0,05$$
 On cherche alors la meilleure combinaison de résistances de la norme E12 pour s’approcher au maximum de ce ratio de 0,05.
 
 <figure style="float: left; width: 250px; margin: 0 20px 15px 0; text-align: center;">
-  <img src="images/image2.png" style="width: 100%;">
+  <img src="images/image2.png" style="width: 25%;">
   <figcaption style="font-size: 0.9em; font-style: italic; color: gray;">Norme E12</figcaption>
 </figure>
 <br><br><br><br>
@@ -66,7 +66,7 @@ Comme avant, on cherche alors la meilleure combinaison de résistances de la nor
 
 
 <figure style="float: left; width: 250px; margin: 0 20px 15px 0; text-align: center;">
-  <img src="images/image2.png" style="width: 100%;">
+  <img src="images/image2.png" style="width: 25%;">
   <figcaption style="font-size: 0.9em; font-style: italic; color: gray;">Norme E12</figcaption>
 </figure>
 <br><br><br><br>
