@@ -82,3 +82,32 @@ $$V\_{out} = \\frac{V\_{CC} \\times R\_{NTC}}{R\_{fixe} + R\_{NTC}}$$
 * **À $80^\\circ\\text{C}$ ($R\_{NTC} \\approx 1.2\\text{ k}\\Omega$) :** $V\_{out} = \\frac{3.3\\text{ V} \\times 1.2\\text{ k}\\Omega}{4.7\\text{ k}\\Omega + 1.2\\text{ k}\\Omega} \\approx 0.67\\text{ V}$
 
 Un condensateur de filtrage C5 de $33\\text{ nF}$ est placé en parallèle pour former un filtre passe-bas destiné à éliminer le bruit électrique haute fréquence généré par le découpage PWM du moteur.
+## PCB
+
+Pour le PCB il a été choisit de le faire en 2 couches pour en simplifier la conception étant donné que la taille de celui ci dépend principalement de la taille des pistes de puissance
+
+### Répartition des couches
+
+* Couche 1 (Top) : cette couche contient tout les composants à l'exception du connecteur avec la carte de puissance qui doit être situé sur la couche du dessous) ainsi que la majorité des pistes de signal et est dédiée a la masse.
+* Couche 2 (Bottom) : cette piste sert principalement aux pistes de puissance, d'autres pistes qui ne rentraient pas sur la couche 1 on été mises en minimisant leurs longueurs pour garder une masse au plus dégagée. Le connecteur pour la carte de contrôle se trouve sur cette couche pour permettre l'installation de radiateur sur les composants de puissance de la couche 1
+
+Le déplacement des courants importants entre les deux couches se font grâce a plusieurs dizaines de vias qui après s'être remplis d'étain forment une connexion assez épaisse pour supporter le courant.
+
+### Largeur des pistes
+
+* Les pistes de puissance : cette catégorie regroupe toutes les liaison entre l'alimentation et le moteur, elles doivent supporter des intensités importantes c'est pour cela que leur largeur est de l'ordre du centimètre et qu'elles sont dénudées pour y souder un fil ou une découpe de cuivre par dessus ce qui augmente l'épaisseur de conduction pour permettre un passe de courant important
+* Les pistes de signal/faible puissance : cette catégorie regroupe toutes les autres pistes, leur épaisseur a été choisie de 0.5 mm sauf près du connecteur avec la carte de contrôle qui ne permet pas cette largeur, dans ce cas elles sont de 0.3mm
+
+### isolation
+
+&#x20;une isolation minimal de 0.25mm a été imposé entre toutes les pistes et les pads. Aucun composant de puissance ne possède de frein thermique pour maximiser l'épaisseur de la connexion.
+
+### Positionnement des composants
+
+Les composants principaux, c'est à dire les composants de puissance on été positionné de sorte que les pistes soient le plus droites possibles pour faciliter le soudage des fil ou découpe de cuivre par dessus.
+
+Tout les autres composants on été positionné de sorte que les composants de puissance puissent être refroidis par un radiateur.
+
+Nous avons pris soin de positionner la thermistance proche des composants de puissance pour mesurer au mieux la température de ceux-ci.
+
+Les trous de fixation et le connecteurs ont été positionné pour permettre compatibilité avec la carte de contrôle.
