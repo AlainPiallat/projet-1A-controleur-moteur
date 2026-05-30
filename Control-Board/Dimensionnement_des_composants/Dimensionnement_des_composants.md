@@ -22,18 +22,15 @@ $$\frac{Rbus2}{Rbus1+Rbus2}=\frac{VBUS}{VM}=\frac{3}{60}=0,05$$
 
 On cherche alors la meilleure combinaison de résistances de la norme E12 pour s’approcher au maximum de ce ratio de 0,05.
 
-<figure style="float: left; width: 250px; margin: 0 20px 15px 0; text-align: center;">
-  <img src="images/image2.png" style="width: 25%;">
-  <figcaption style="font-size: 0.9em; font-style: italic; color: gray;">Norme E12</figcaption>
-</figure>
+<img src="images/image2.png" width="250" align="left">
 <br><br><br><br>
 On trouve alors que la meilleure combinaison est :
 <br><br>
 * Rbus1 = 68 kΩ
 <br><br>
 * Rbus2 = 3,3 kΩ
-<div style="clear: both;"></div>
- 
+<br clear="all">
+ <br><br><br><br>
  
 2. **Dimensionnement du pont diviseur pour la protection matérielle surintensité**
 
@@ -65,14 +62,11 @@ $$\frac{RSCREF2}{RSCREF1+RSCREF2}=\frac{VSCREF}{VDD}=\frac{0,84}{3,3}=0,2545$$
 Comme avant, on cherche alors la meilleure combinaison de résistances de la norme E12 pour s’approcher au maximum de ce ratio de 0,2545.
 
 
-<figure style="float: left; width: 250px; margin: 0 20px 15px 0; text-align: center;">
-  <img src="images/image2.png" style="width: 25%;">
-  <figcaption style="font-size: 0.9em; font-style: italic; color: gray;">Norme E12</figcaption>
-</figure>
+<img src="images/image2.png" width="250" align="left">
 <br><br><br><br>
 On trouve alors que la meilleure combinaison est :
 <br><br>
 * RSCREF1 = 10 kΩ
 <br><br>
 * RSCREF2 = 3,3 kΩ
-<div style="clear: both;"></div>
+<br clear="all">
